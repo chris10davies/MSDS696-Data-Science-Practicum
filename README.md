@@ -104,6 +104,22 @@ The first challenge was to bring all of this data together into a cohesive datas
 In an effort to gain a better understanding of machine learning, I decided to compare the results of two versions of the dataset in the regression models.  The first dataset is grouped by the student, includes the material click data, and the average assessment score for each student is the target.  The second dataset does not include the click data and has a row each assessment score for each student as the target.  Some features the second dataset are not categorical and may provide enough variance for predictions.  To sum it up:
 
 **Click Dataset**
+<table align="center">
+    <tr>
+        <td align="center">**Description**</td>
+        <td align="center">Average score per student and total clicks broken out by  course activity type.</td>
+    </tr>
+    <tr>
+        <td align="center">**Structure**</td>
+        <td align="center">more features, less rows</td>
+    </tr>
+    <tr>
+        <td align="center">**Rows/Features**</td>
+        <td align="center">37,030 rows, 38 features</td>
+    </tr>
+</table>
+
+**Click Dataset**
 
 |   | |
 |:------------- |:-------------|
