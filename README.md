@@ -1,4 +1,4 @@
-# Predict Assessment Scores - Sourced from Indeed
+# Predict Assessment Scores - Sourced from Kaggle
 #### MSDS696 Data Science Practicum II
 
 ## PROJECT OVERVIEW
