@@ -1,15 +1,15 @@
-# Predict Assessment Scores - Sourced from Indeed
+complexities# Predict Assessment Scores - Sourced from Indeed
 #### MSDS696 Data Science Practicum II
 
 ## PROJECT OVERVIEW
-2 paragraphs on overview.  Get some references here.  Make it interesting.
+One measure of a successful online delivery course is the student’s assessment score or grade.  Analyzing what features have the most impact on assessment scores is a great way to identify potential areas of improvement to an online learning experience.  The Open University Learning Analytics dataset sourced from Kaggle contains student demographics,  click data on course materials, student registrations, and assessment score information.  I utilized the available data points, along with feature engineering, to train supervised learning models to predict assessment scores.
 
-One measure of a successful online delivery course is the student’s assessment score or grade.  Analyzing what features have the most impact on assessment scores is a great way to identify potential areas of improvement to an online learning experience.  The Open University Learning Analytics dataset sourced from Kaggle contains student demographics, total clicks per learning module, student registrations, and assessment score information.  I plan to use the available data points and utilize supervised learning to train a model to predict assessment scores.  
+For this project, I spent most of my time training regression models to predict assessment scores.  It was an amazing exercise in learning but I was not entirely happy with the results.  For that reason, I also added some classification models to this research and simply predicted if the student passed or failed.  Of course, the results where better as I was choosing pass or fail as opposed to a score from 0 to 100.  In the process of seeking better results, I feel like I gained some confidence in understanding the complexities of machine learning.  
 
 ## DATA
 
 The data came from from **Kaggle:**
-https://www.kaggle.com/rocki37/open-university-learning-analytics-dataset/activity
+https://www.kaggle.com/rocki37/open-university-learning-analytics-dataset/activity & https://analyse.kmi.open.ac.uk/open_dataset
 
 **Open University Datasets**
 
