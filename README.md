@@ -106,26 +106,18 @@ In an effort to gain a better understanding of machine learning, I decided to co
 **Click Dataset**
 <table align="center">
     <tr>
-        <td align="center">**Description**</td>
+        <td align="center"><b>Description</b></td>
         <td align="center">Average score per student and total clicks broken out by  course activity type.</td>
     </tr>
     <tr>
-        <td align="center">**Structure**</td>
+        <td align="center"><b>Structure</b></td>
         <td align="center">more features, less rows</td>
     </tr>
     <tr>
-        <td align="center">**Rows/Features**</td>
+        <td align="center"><b>Rows/Features</b></td>
         <td align="center">37,030 rows, 38 features</td>
     </tr>
 </table>
-
-**Click Dataset**
-
-|   | |
-|:------------- |:-------------|
-| **Description** | Average score per student and total clicks broken out by  course activity type. |
-| **Structure** | more features, less rows |
-| **Rows/Features** | 37,030 rows, 38 features |
 
 **Assessment Dataset**
 
