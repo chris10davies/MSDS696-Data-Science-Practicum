@@ -120,12 +120,20 @@ In an effort to gain a better understanding of machine learning, I decided to co
 </table>
 
 **Assessment Dataset**
-
-|   | |
-|:------------- |:-------------|
-| **Description** | All assessments with many repeated features (many assessments per student) and different outcome score.|
-| **Structure** | less features, more rows |
-| **Rows/Features** | 153,537 rows, 19 features |
+<table align="center">
+    <tr>
+        <td align="center"><b>Description</b></td>
+        <td align="center">All assessments with many repeated features (many assessments per student) and different outcome score.</td>
+    </tr>
+    <tr>
+        <td align="center"><b>Structure</b></td>
+        <td align="center">less features, more rows</td>
+    </tr>
+    <tr>
+        <td align="center"><b>Rows/Features</b></td>
+        <td align="center">153,537 rows, 19 features</td>
+    </tr>
+</table>
 
 ## FEATURE ENGINEERING
 
