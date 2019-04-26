@@ -101,6 +101,24 @@ The first challenge was to bring all of this data together into a cohesive datas
 
 ![alt text](images/join_1.png "join")
 
+In an effort to gain a better understanding of machine learning, I decided to compare the results of two versions of the dataset in the regression models.  The first dataset is grouped by the student, includes the material click data, and the average assessment score for each student is the target.  The second dataset does not include the click data and has a row each assessment score for each student as the target.  Some features the second dataset are not categorical and may provide enough variance for predictions.  To sum it up:
+
+**Click Dataset**
+
+|   | |
+|:------------- |:-------------|
+| **Description** | Average score per student and total clicks broken out by  course activity type. |
+| **Structure** | more features, less rows |
+| **Rows/Features** | 37,030 rows, 38 features |
+
+**Assessment Dataset**
+
+|   | |
+|:------------- |:-------------|
+| **Description** | All assessments with many repeated features (many assessments per student) and different outcome score.|
+| **Structure** | less features, more rows |
+| **Rows/Features** | 153,537 rows, 19 features |
+
 ## FEATURE ENGINEERING
 
 ## EDA (EXPLORATORY DATA ANALYSIS)
