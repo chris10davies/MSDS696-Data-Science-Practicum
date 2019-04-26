@@ -107,7 +107,7 @@ In an effort to gain a better understanding of machine learning, I decided to co
 <table align="center">
     <tr>
         <td align="center"><b>Description</b></td>
-        <td align="center">Average score per student and total clicks broken out by  course activity type.</td>
+        <td align="left">Average score per student and total clicks broken out by  course activity type.</td>
     </tr>
     <tr>
         <td align="center"><b>Structure</b></td>
@@ -119,11 +119,12 @@ In an effort to gain a better understanding of machine learning, I decided to co
     </tr>
 </table>
 
+
 **Assessment Dataset**
 <table align="center">
     <tr>
         <td align="center"><b>Description</b></td>
-        <td align="center">All assessments with many repeated features (many assessments per student) and different outcome score.</td>
+        <td align="left">All assessments with many repeated features (many assessments per student) and different outcome score.</td>
     </tr>
     <tr>
         <td align="center"><b>Structure</b></td>
