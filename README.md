@@ -11,7 +11,8 @@ For this project, I spent most of my time training regression models to predict 
 The data and variable descriptions came from from **Kaggle:**
 https://www.kaggle.com/rocki37/open-university-learning-analytics-dataset/activity & https://analyse.kmi.open.ac.uk/open_dataset
 
-**Open University Datasets**
+#### **Open University Datasets**
+---
 
 **Courses** - Modules and there presentations,
 22 rows, 3 variables
