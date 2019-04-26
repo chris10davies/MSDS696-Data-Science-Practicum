@@ -97,7 +97,7 @@ https://www.kaggle.com/rocki37/open-university-learning-analytics-dataset/activi
 | sum_click | Number of interactions by student with material in that day. |
 
 ## JOINS
-The first challenge was to bring all of this data together into a cohesive dataset that could be used for machine learning.  I knew I had 173,912 assessments with scores to train my models.  It quickly became apparent their were multiple assessments assessments for each student.  After my joins, a student could have multiple assessment rows with many common features and a different target score.  This could make training a model problematic.   
+The first challenge was to bring all of this data together into a cohesive dataset that could be used for machine learning.  I knew I had 173,912 assessments with scores to train my models.  It quickly became apparent their were multiple assessments for each student.  After my joins, a student could have multiple assessment rows with many common features and a different target score.  This could make training a model problematic.   
 
 ![alt text](images/join_1.png "join")
 
