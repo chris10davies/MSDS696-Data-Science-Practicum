@@ -1,4 +1,4 @@
-complexities# Predict Assessment Scores - Sourced from Indeed
+# Predict Assessment Scores - Sourced from Indeed
 #### MSDS696 Data Science Practicum II
 
 ## PROJECT OVERVIEW
@@ -8,7 +8,7 @@ For this project, I spent most of my time training regression models to predict 
 
 ## DATA
 
-The data came from from **Kaggle:**
+The data and variable descriptions came from from **Kaggle:**
 https://www.kaggle.com/rocki37/open-university-learning-analytics-dataset/activity & https://analyse.kmi.open.ac.uk/open_dataset
 
 **Open University Datasets**
