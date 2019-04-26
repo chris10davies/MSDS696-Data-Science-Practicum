@@ -8,23 +8,93 @@ One measure of a successful online delivery course is the student’s assessment
 
 ## DATA
 
-The data was from Kaggle
+The data came from from **Kaggle:**
+https://www.kaggle.com/rocki37/open-university-learning-analytics-dataset/activity
 
 **Open University Datasets**
 
-List all dataset fields and dimensions
+**Courses** - Modules and there presentations,
+22 rows, 3 variables
 
 | Variable       | Description          |
 |:------------- |:-------------|
-| Title     | Review title |
-| Reviewer | Job title of the reviewer and current/former employee. |
-| Location | Company city,  state  |
-| Date       | Review date |
-| Rating | Company rating (1-5) |
-| Review | Text of the review |
-| State | Variable created by pulling it from location  |
-| Job Title | Variable created by pulling it from reviewer      |
-| Employee Status | Variable created by pulling it from reviewer      |
+| code_module | Code name of the module. |
+| code_presentation | Code name of the presentation. |
+| length | Length in days of module/presentation. |
+
+**Assessments** - Assessments in module presentations, 206 rows, 6 variables
+
+| Variable       | Description          |
+|:------------- |:-------------|
+| code_module | ID code of module. |
+| code_presentation | ID code of presentation. |
+| id_assessment | ID number of assessment. |
+| assessment_type | Tutor Marked Assessment (TMA), Computer Marked Assessment (CMA) and Final Exam (Exam). |
+| date | Number of days since the start of the module-presentation. |
+| weight | % weight of assessment. |
+
+**Virtual Learning Environment (VLE)** - Available materials in the virtual learning environment (VLE),
+6364 rows, 6 variables
+
+| Variable       | Description          |
+|:------------- |:-------------|
+| id_site | ID number of material. |
+| code_module | ID code of module. |
+| code_presentation | ID code of presentation. |
+| activity_type | Role associated with material. |
+| week_from | Planned use from week. |
+| week_to | Planned use to week. |
+
+**Student Info** - Demographic information about students and their final result,
+32,593 rows, 12 variables
+
+| Variable       | Description          |
+|:------------- |:-------------|
+| code_module | ID code of module. |
+| code_presentation | ID code of presentation. |
+| id_student | ID number of student. |
+| gender | Students gender. |
+| region | Geographic region. |
+| highest_education | highest student education level. |
+| imd_band |  Index of Multiple Depravation. |
+| age_band | Students age. |
+| num_of_prev_attempts | Number of times module attempted by student. |
+| studied_credits | Number of credits for module. |
+| disability | Indicates if student declared disability. |
+| final_result | Students final result of module. |
+
+**Student Registration** - Student registration information for the module presentation,
+32,593 rows, 5 variables
+
+| Variable       | Description          |
+|:------------- |:-------------|
+| code_module | ID code of module. |
+| code_presentation | ID code of presentation. |
+| id_student | ID number of student. |
+| date_registration | Date of students registration in days relative to modules start. |
+| date_unregistration | Date of students registration in days relative to modules start.  Blank for students who complete course.  Students that unregister have a final result of 'Withdrawn'. |
+
+**Student Assessment** - Results of student assessments, 173,912 rows, 5 variables
+
+| Variable       | Description          |
+|:------------- |:-------------|
+| id_assessment | ID number of assessment.
+| id_student | ID number of student. ||
+| date_submitted | Date of students submission in days relative to modules start. |
+| is_banked | Flag indicating assessment result transferred from previous presentation. |
+| score | Assessment score from 0 - 100.  40 is considered 'Fail'. |
+
+**Student VLE** - Students interactions with materials in the VLE,
+1,0655,280 rows, 6 variables
+
+| Variable       | Description          |
+|:------------- |:-------------|
+| code_module | ID code of module. |
+| code_presentation | ID code of presentation. |
+| id_student | ID number of student. |
+| id_site | ID number of material. |
+| date | Date of student interaction with material. Measured in number of days since module start. |
+| sum_click | Number of interactions by student with material in that day. |
 
 ## JOINS
 
