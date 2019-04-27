@@ -287,9 +287,9 @@ I started modeling with a linear regression model.  As suspected, the results we
     </tr>
 </table>
 
-For each model, I ran predict on the train and test datasets.  I did this to compare the results of the fitted model on train and test, specifically looking for underfitting and overfitting.
+XGBoost has the best adjusted r2 and the lowest RSME on the click dataset, although I was hoping for better results.  For each model, I ran predict on the train and test datasets.  I did this to compare the results of the fitted model on train and test, specifically looking for underfitting and overfitting.
 
-**Predict vs. Actual for Train & Test Datasets - Random Forest (best model)**
+**Predict vs. Actual for Train & Test Datasets - XGBoost (best model)**
 
 ![alt text](images/click_results_scat.png "click_results_scat")
 
@@ -317,11 +317,15 @@ For each model, I ran predict on the train and test datasets.  I did this to com
     </tr>
 </table>
 
+Random Forest has the best adjusted r2 and the lowest RSME on the assessment dataset, but the overall results were far lower than the click dataset scores.  More features and with less rows did much better with the regression models.  This makes sense, as more features make the model more complex with greater variance, ultimately allowing for better predictions.   
+
 **Predict vs. Actual for Train & Test Datasets - XGBoost (best model)**
 
 ![alt text](images/assess_results_scat.png "assess_results_scat")
 
 ###  Random Forest - Important Features
+
+To finish up regression modeling, I wanted to see if I could improve the random forest model on the click dataset and beat out XGBoost.  After observing the important features, I decided to rerun the model on the click dataset with the unimportant features removed, allowing for less noise in the model.
 
 ![alt text](images/rf_imp.png "rf_imp")
 
@@ -339,6 +343,8 @@ For each model, I ran predict on the train and test datasets.  I did this to com
         <td align="left">11.2207</td>
     </tr>
 </table>
+
+The model did slightly better than it's last run, but not better than XGBoost.
 
 ###  Supervised Learning - Classification
 
