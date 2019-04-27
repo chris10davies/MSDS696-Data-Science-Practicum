@@ -138,6 +138,16 @@ In an effort to gain a better understanding of machine learning, I decided to co
 
 ## FEATURE ENGINEERING
 
+The following variables were feature engineered:
+<table align="center">
+    <tr>
+        <td align="center"><b>Average Click</b></td>
+        <td align="left">Average clicks across all activity types for a student.</td>
+        <td align="left">Click dataset only</td>
+    </tr>
+</table>
+
+
 ## EDA (EXPLORATORY DATA ANALYSIS)
 
 ### Employee Status
