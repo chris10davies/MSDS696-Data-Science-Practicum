@@ -136,6 +136,8 @@ In an effort to gain a better understanding of machine learning, I decided to co
     </tr>
 </table>
 
+For both datasets, records with a final status of 'Witdrawn' and records that were missing an imd band were removed.
+
 ## FEATURE ENGINEERING
 
 The following variables were feature engineered:
