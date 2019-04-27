@@ -235,21 +235,28 @@ It's very clear that the lower scores had lower average clicks.  To be fair ther
 
 I chose to measure the model results with the following 2 metrics:
 
-**Adjusted r2** - dhdhdh
+**Adjusted r2** - r2 is the percentage of the variation in response variables that is explained by the model. (ref r2)  Adjusted r2 adjusts for multiple predictors and only increases the score if a predictor improves a model more than what chance would predict(ref adjusted r2).  The higher the adjusted r2, the better.
 
-**Root Mean Squared Error (RMSE)** - ddfadfad
+**Root Mean Square Error (RMSE)** - RMSE is the "standard deviation of the residuals" (ref RMSE).  The closer to zero (exact prediction), the better.  
 
-###  GridSearhCV
+###  GridSearchCV
+
+I utilized GridSearchCV to perform 5 fold cross validation and identify the optimal parameters for all of my models.  It did take a long time to run each model, but seemed to worth it to get the best parameters settings.
+
+**Sample of GridSearchCV Code with parameter grid**  
 
 ``` python
 
-    analysis = TextBlob(Reviews)
-    if analysis.sentiment.polarity >= .3:
-        return 1
-    elif analysis.sentiment.polarity < .3 and analysis.sentiment.polarity >= -.3 :
-        return 0
-    else:
-        return -1
+rf = RandomForestRegressor(random_state=42)
+
+parameters = { 'max_features':np.arange(5,10),'n_estimators':[500],'min_samples_leaf': [10,50,100,200,500]}
+
+rf_gs = GridSearchCV(rf,parameters,scoring=scoring,refit='r2',cv=5,return_train_score=True)
+
+start_time = timer(None)
+rf_gs.fit(X_train, y_train)
+timer(start_time)
+
 ```
 
 ## CONCLUSIONS
