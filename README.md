@@ -167,6 +167,7 @@ The following variables were feature engineered:
        <td><img src="images/age_bar.png"></td>
        <td><img src="images/final_res_bar.png"></td>
      </tr>
+  </table>
 
 Tutor marked assessments (TMA) are the highest proportion of assessments types and final exams the lowest. Almost 70% of the students are less than 35 years old and over 20% of the students had a final result of 'Failed' with the remainder passing or passing with distinction.  
 
@@ -219,13 +220,9 @@ train_tfidf_vectors_tesla = tfidf_vectorizer_tesla.fit_transform(cln_review_tesl
 
 Latent Semantic Analysis (LSA) was used on the TF-IDF vector for feature reduction to improve some performance issues. LSA reduced the Google dataset to 400 components that explained 78% of the variance and Tesla to 400 components that explained 79% of the variance.
 
-Dr. George recommended using k-medoids as the clustering algorithm because it is know to work better with sparse data. There were not many k-medoid options int Pythons so I went with the pyclustering library.
 
-To get the optimal number of clusters pyclustering's silhouette was utilized. It works a little differently from my understanding of other silhouette methods. Instead of evaluating and the results of the clustering model and then making adjustments, pyclustering silhouette is run first, and returns a number for each cluster iteration. The cluster iteration with the highest number is the optimal number of clusters.
 
-**Pyclustering Silhouette Output**
 
-The results of pyclustering's silhouette said the optimal number of clusters for Google is 17 and I had performance issues running the same routine for Tesla. After many tries, I just went with 17 for the optimal number of clusters to Tesla. Finally, the pyclustering k-medoids model was run with the optimal number of clusters.
 
 ``` python
 # google - Kmedoids - with optimal clusters
