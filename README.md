@@ -231,17 +231,9 @@ It's very clear that the lower scores had lower average clicks.  To be fair ther
 
 ##  ANALYSIS
 
-### Model Result Measures
-
-I chose to measure the model results with the following 2 metrics:
-
-**Adjusted r2** - r2 is the percentage of the variation in response variables that is explained by the model. (ref r2)  Adjusted r2 adjusts for multiple predictors and only increases the score if a predictor improves a model more than what chance would predict(ref adjusted r2).  The higher the adjusted r2, the better.
-
-**Root Mean Square Error (RMSE)** - RMSE is the "standard deviation of the residuals" (ref RMSE).  The closer to zero (exact prediction), the better.  
-
 ###  GridSearchCV
 
-I utilized GridSearchCV to perform 5 fold cross validation and identify the optimal parameters for all of my models.  It did take a long time to run each model, but seemed to worth it to get the best parameters settings.
+I utilized GridSearchCV to perform 5 fold cross validation and identify the optimal parameters for all of my models.  It did take a long time to run each model, but it seems like it was worth it to get optimized parameters settings.
 
 **Sample of GridSearchCV Code with parameter grid**  
 
@@ -259,7 +251,17 @@ timer(start_time)
 ```
 ###  Supervised Learning - Regression
 
+**Model Result Measures**
+
+I chose to measure the regression model results with the following 2 metrics:
+
+**Adjusted r2** - r2 is the percentage of the variation in response variables that is explained by the model. (ref r2)  Adjusted r2 adjusts for multiple predictors and only increases the score if a predictor improves a model more than what chance would predict(ref adjusted r2).  The higher the adjusted r2, the better.
+
+**Root Mean Square Error (RMSE)** - RMSE is the "standard deviation of the residuals" (ref RMSE).  The closer to zero (exact prediction), the better.  
+
 Write something here about linear regression and regularization. score.
+
+**Model Results**
 
 **Click Dataset - Top 3 Models**
 <table align="center">
@@ -285,6 +287,9 @@ Write something here about linear regression and regularization. score.
     </tr>
 </table>
 
+For each model, I ran predict on the train and test datasets to make sure the model was not over or underfitting.
+
+**Predict vs. Actual for Train & Test Datasets**
 ![alt text](images/click_results_scat.png "click_results_scat")
 
 **Assessment Dataset - Top 3 Models**
@@ -333,6 +338,14 @@ Write something here about linear regression and regularization. score.
 </table>
 
 ###  Supervised Learning - Classification
+
+**Model Result Measures**
+
+I chose to measure the regression model results with the following 2 metrics:
+
+**Adjusted r2** - r2 is the percentage of the variation in response variables that is explained by the model. (ref r2)  Adjusted r2 adjusts for multiple predictors and only increases the score if a predictor improves a model more than what chance would predict(ref adjusted r2).  The higher the adjusted r2, the better.
+
+**Root Mean Square Error (RMSE)** - RMSE is the "standard deviation of the residuals" (ref RMSE).  The closer to zero (exact prediction), the better.  
 
 <table align="center">
     <tr>
