@@ -259,9 +259,9 @@ I chose to measure the regression model results with the following 2 metrics:
 
 **Root Mean Square Error (RMSE)** - RMSE is the "standard deviation of the residuals" (ref RMSE).  The closer to zero (exact prediction), the better.  
 
-Write something here about linear regression and regularization. score.
-
 **Model Results**
+
+I started modeling with a linear regression model.  As suspected, the results were not great with an RSME of 12.92 and an adjusted r2 of 0.3823.  I also tried regularization with Ridge and Lasso but the results did not improve.  Below are the results of the top 3 models for each dataset.
 
 **Click Dataset - Top 3 Models**
 <table align="center">
@@ -287,9 +287,9 @@ Write something here about linear regression and regularization. score.
     </tr>
 </table>
 
-For each model, I ran predict on the train and test datasets to make sure the model was not over or underfitting.
+For each model, I ran predict on the train and test datasets.  I did this to compare the results of the fitted model on train and test, specifically looking for underfitting and overfitting.
 
-**Predict vs. Actual for Train & Test Datasets**
+**Predict vs. Actual for Train & Test Datasets - Random Forest (best model)**
 
 ![alt text](images/click_results_scat.png "click_results_scat")
 
@@ -316,6 +316,8 @@ For each model, I ran predict on the train and test datasets to make sure the mo
         <td align="left">14.7488</td>
     </tr>
 </table>
+
+**Predict vs. Actual for Train & Test Datasets - XGBoost (best model)**
 
 ![alt text](images/assess_results_scat.png "assess_results_scat")
 
