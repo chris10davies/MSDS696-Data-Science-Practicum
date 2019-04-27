@@ -152,6 +152,21 @@ The following variables were feature engineered:
 
 ## EDA (EXPLORATORY DATA ANALYSIS)
 
+### Correlation Matrix
+ I created a correlation matrix for both datasets and did not see very strong correlations between any predictor variables.
+
+ <table>
+   <tbody>
+     <tr>
+       <th align="left">Click Dataset</th>
+       <th align="center">Assessment Dataset</th>
+     </tr>
+     <tr>
+       <td><img src="images/corr_click.png"></td>
+       <td><img src="images/corr_assess.png"></td>
+     </tr>
+  </table>
+
 ### Bar Plots
  Many bar plots were utilized to better understand the data. Below are a few that I found the most interesting.
 
