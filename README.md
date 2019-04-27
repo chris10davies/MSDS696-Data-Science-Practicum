@@ -158,7 +158,7 @@ The following variables were feature engineered:
  <table>
    <tbody>
      <tr>
-       <th align="left">Click Dataset</th>
+       <th align="center">Click Dataset</th>
        <th align="center">Assessment Dataset</th>
      </tr>
      <tr>
@@ -173,7 +173,7 @@ The following variables were feature engineered:
  <table>
    <tbody>
      <tr>
-       <th align="left">Assessment Type</th>
+       <th align="center">Assessment Type</th>
        <th align="center">Age Band</th>
        <th align="center">Final Result</th>
      </tr>
@@ -190,7 +190,7 @@ Tutor marked assessments (TMA) are the highest proportion of assessments types a
  <table>
    <tbody>
      <tr>
-       <th align="left">Assessment Type</th>
+       <th align="center">Assessment Type</th>
        <th align="center">Age Band</th>
        <th align="center">Course Module</th>
      </tr>
@@ -218,7 +218,7 @@ It's very clear that the lower scores had lower average clicks.  To be fair ther
 <table>
   <tbody>
     <tr>
-      <th align="left">Click Dataset</th>
+      <th align="center">Click Dataset</th>
       <th align="center">Assessment Dataset</th>
     </tr>
     <tr>
@@ -227,7 +227,7 @@ It's very clear that the lower scores had lower average clicks.  To be fair ther
     </tr>
  </table>
 
- 
+ Both datasets are left skewed, although the assessment dataset seems to be more left skewed than the click dataset.  The assessment dataset has 2 large spikes around 80 and 100.  The click dataset seems to be the closest of the two to a normal distribution.  Looking at this it does seem like linear models may not perform well with this data.  In the analysis section we'll see this does prove true as non-linear models have the best results.  
 
 ##  ANALYSIS
 
