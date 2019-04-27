@@ -231,7 +231,15 @@ It's very clear that the lower scores had lower average clicks.  To be fair ther
 
 ##  ANALYSIS
 
-### Sentiment Analysis
+### Model Result Measures
+
+I chose to measure the model results with the following 2 metrics:
+
+**Adjusted r2** - dhdhdh
+
+**Root Mean Squared Error (RMSE)** - ddfadfad
+
+###  GridSearhCV
 
 ``` python
 
@@ -243,74 +251,6 @@ It's very clear that the lower scores had lower average clicks.  To be fair ther
     else:
         return -1
 ```
-
-Text for rating 1/positive sentiment review:
-> Same as every other tech company now. They will only pay the top people what they want then the rest are left to pick up the pieces. Tesla name carries weight and they know it.
-
-Sounds like negative sentiment to me! Here is how TextBlob scored it.  
-
-``` python
-Sentiment(polarity=0.075, subjectivity=0.4, assessments=[(['same'], 0.0, 0.125, None), (['other'], -0.125, 0.375, None), (['only'], 0.0, 1.0, None), (['top'], 0.5, 0.5, None), (['left'], 0.0, 0.0, None)])
-```
-TextBlob give a high polarity and subjectivity score for the word 'top' and does not recognize context of the word. After a conversation with Dr. George, in the future it may be beneficial to train my own sentiment classifier.  
-
-### Term Frequency-Inverse Document Frequency(TF-IDF)
-Two different methods were used to extract topics from the review text.  Both methods needed a TF-IDF vector created from the review terms as input.  
-
-``` python
-# TFIDF - fit/transform
-# min_df=3 ignores terms occuring in less than 3 documents
-#Code from Week 4 Solution - Regis Text Analytics Class - Dr. Nathan George
-
-# Instantiate tfidf vectorizer and fit_transform
-tfidf_vectorizer_google = TfidfVectorizer(min_df=3,ngram_range=(1,1))
-train_tfidf_vectors_google = tfidf_vectorizer_google.fit_transform(cln_review_google)
-
-tfidf_vectorizer_tesla = TfidfVectorizer(min_df=3,ngram_range=(1,1))
-train_tfidf_vectors_tesla = tfidf_vectorizer_tesla.fit_transform(cln_review_tesla)
-```
-
-### Clustering/K-medoids/Latent Semantic Analysis(LSA)
-
-Latent Semantic Analysis (LSA) was used on the TF-IDF vector for feature reduction to improve some performance issues. LSA reduced the Google dataset to 400 components that explained 78% of the variance and Tesla to 400 components that explained 79% of the variance.
-
-
-
-
-
-``` python
-# google - Kmedoids - with optimal clusters
-
-# Code source
-# https://github.com/annoviko/pyclustering/blob/master/pyclustering/cluster/ema.py
-# https://github.com/annoviko/pyclustering/issues/366
-# https://codedocs.xyz/annoviko/pyclustering/classpyclustering_1_1cluster_1_1kmedoids_1_1kmedoids.html
-# https://github.com/letiantian/kmedoids
-
-# set random initial medoids
-initial_medoids_google = list(range(0,17))
-
-# create instance of K-Medoids algorithm
-kmedoids_instance_google = kmedoids(google_list, initial_medoids_google)
-
-# run cluster analysis and obtain results
-kmedoids_instance_google.process();
-clusters_google = kmedoids_instance_google.get_clusters()
-medoids_google = kmedoids_instance_google.get_medoids();
-
-print("Amount of clusters - Google:", len(clusters_google));
-for cluster in clusters_google:
-    print("Cluster length:", len(cluster));
-```
-The documents under each identified cluster were grouped and a calculation was performed to get the average TF-IDF. This was done to rank the clusters by highest average TF-IDF. Then, for the highest average TF-IDF the top words by word frequency were examined. See the results for the cluster with the highest TF-IDF below.
-
-The pyclustering library seems to have its challenges with performance and accuracy. For the future, running k-medoids clustering in R, which seems to have more options, may improve results. Also, trying other clustering algorithms like k-means and KNN may prove beneficial.
-
-### Non-negative matrix factorization (NMF)/Latent Dirichlet Allocation (LDA)
-
-Topic modeling was done using Non-negative matrix factorization (NMF) and Latent Dirichlet Allocation (LDA).
-
-
 
 ## CONCLUSIONS
 
@@ -325,8 +265,6 @@ Topic modeling was done using Non-negative matrix factorization (NMF) and Latent
 * Good Results with Topic Modeling
 
 * Additional Stop Words
-
-
 
 ## REFERENCES
 
