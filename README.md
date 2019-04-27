@@ -285,6 +285,8 @@ Write something here about linear regression and regularization. score.
     </tr>
 </table>
 
+![alt text](images/click_results_scat.png "click_results_scat")
+
 **Assessment Dataset - Top 3 Models**
 <table align="center">
     <tr>
@@ -309,19 +311,68 @@ Write something here about linear regression and regularization. score.
     </tr>
 </table>
 
+![alt text](images/assess_results_scat.png "assess_results_scat")
+
+###  Random Forest - Important Features
+
+![alt text](images/rf_imp.png "rf_imp")
+
+**Important Features Removed**
+
+<table align="center">
+    <tr>
+        <td align="center"><b>Model</b></td>
+        <td align="center"><b>Adjusted r2</b></td>
+        <td align="center"><b>RMSE</b></td>
+    </tr>
+    <tr>
+        <td align="left">Random Forest Regressor</td>
+        <td align="left">0.5250</td>
+        <td align="left">11.2207</td>
+    </tr>
+</table>
+
+###  Supervised Learning - Classification
+
+<table align="center">
+    <tr>
+        <td align="center"><b>Model</b></td>
+        <td align="center"><b>Kappa r2</b></td>
+        <td align="center"><b>AUC</b></td>
+        <td align="center"><b>Precision</b></td>
+        <td align="center"><b>Recall</b></td>
+    </tr>
+    <tr>
+        <td align="left">Logistic Regression</td>
+        <td align="left">0.4750</td>
+        <td align="left">0.85567</td>
+        <td align="left">0.85</td>
+        <td align="left">0.94</td>
+    </tr>
+    <tr>
+        <td align="left">Random Forest Classifier</td>
+        <td align="left">0.6020</td>
+        <td align="left">0.91729</td>
+        <td align="left">0.87</td>
+        <td align="left">0.97</td>
+    </tr>
+</table>
+
 ## CONCLUSIONS
 
-* Analysis matched perceived organizational cultures
+* Regression Models didn’t get the best results, more features may improve results
+
 
 * Simple Word Counts Impressive
 
-* Semantic analysis – Train Classifier
+* GridSearchCV worked great to identify optimal parameters - Further hypertuning may improve results while being cautious about overfitting
 
-* K-Medoids clustering a bit of a struggle – More options in R
+* Predicting assessment scores would have been easier if there was one score per student, made things complex
 
-* Good Results with Topic Modeling
+* Ensemble models are powerful and produce impressive results
 
-* Additional Stop Words
+* It makes sense that classification performed better than regression, as classification had a 50% chance of getting it right
+
 
 ## REFERENCES
 
