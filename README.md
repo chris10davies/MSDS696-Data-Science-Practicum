@@ -256,8 +256,58 @@ rf_gs = GridSearchCV(rf,parameters,scoring=scoring,refit='r2',cv=5,return_train_
 start_time = timer(None)
 rf_gs.fit(X_train, y_train)
 timer(start_time)
-
 ```
+###  Supervised Learning - Regression
+
+Write something here about linear regression and regularization. score.
+
+**Click Dataset - Top 3 Models**
+<table align="center">
+    <tr>
+        <td align="center"><b>Model</b></td>
+        <td align="center"><b>Adjusted r2</b></td>
+        <td align="center"><b>RMSE</b></td>
+    </tr>
+    <tr>
+        <td align="left">Random Forest Regressor</td>
+        <td align="left">0.5049</td>
+        <td align="left">11.4554</td>
+    </tr>
+    <tr>
+        <td align="left">Neural Netr</td>
+        <td align="left">0.4628</td>
+        <td align="left">11.9323</td>
+    </tr>
+    <tr>
+        <td align="left">XGBoost</td>
+        <td align="left">0.5278</td>
+        <td align="left">11.1868</td>
+    </tr>
+</table>
+
+**Assessment Dataset - Top 3 Models**
+<table align="center">
+    <tr>
+        <td align="center"><b>Model</b></td>
+        <td align="center"><b>Adjusted r2</b></td>
+        <td align="center"><b>RMSE</b></td>
+    </tr>
+    <tr>
+        <td align="left">Random Forest Regressor</td>
+        <td align="left">0.3748</td>
+        <td align="left">14.4142</td>
+    </tr>
+    <tr>
+        <td align="left">Neural Netr</td>
+        <td align="left">0.3308</td>
+        <td align="left">14.9135</td>
+    </tr>
+    <tr>
+        <td align="left">XGBoost</td>
+        <td align="left">0.3455</td>
+        <td align="left">14.7488</td>
+    </tr>
+</table>
 
 ## CONCLUSIONS
 
