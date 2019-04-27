@@ -205,9 +205,29 @@ Some of the more interesting boxplots compared score to assessment type, age ban
 
 ### Distribution of Data
 
+I experimented with many scatterplots and other visualizations to get the basic shape of the data.  The better results came in a scatterplot that showed the correlation between average clicks (feature engineered predictor) and score.  
+
 **Average Clicks/Score Scatter**
 
 ![alt text](images/avg_clicks_scatter.png "scatter avg clicks score")
+
+It's very clear that the lower scores had lower average clicks.  To be fair there are plenty of higher scores with lower average clicks as well.  There does, however, seem to be a slight positive correlation.  Intuitively, this makes sense, as  more time spent working with course materials should result in a better course score.  
+
+**Score Histograms**
+
+<table>
+  <tbody>
+    <tr>
+      <th align="left">Click Dataset</th>
+      <th align="center">Assessment Dataset</th>
+    </tr>
+    <tr>
+      <td><img src="images/hist_click.png"></td>
+      <td><img src="images/hist_assess.png"></td>
+    </tr>
+ </table>
+
+ 
 
 ##  ANALYSIS
 
