@@ -139,20 +139,13 @@ In an effort to gain a better understanding of machine learning, I decided to co
 ## FEATURE ENGINEERING
 
 The following variables were feature engineered:
-<table align="center">
-    <tr>
-        <td align="center"><b>Average Click</b></td>
-        <td align="left">Average clicks across all activity types for a student.</td>
-        <td align="left">Click dataset only</td>
-    </tr>
-</table>
 
 | Variable       | Description    |Dataset|
 |:------------- |:-------------|:-------------|
-| Average Click | Average clicks across all activity types for a student. |click |
-| Access Date | date minus date submitted for both datasets. Date is the final date to complete assessment and date submitted is when it was taken. |click and assessment |
-| Module length to number of credits ratio | length of module presentation in days divided by the number of credits for the module. |click and assessment |
-| Total clicks per activity type per student  | e.g. page, questionnaire, quiz. |click |
+| **Average Click** | Average clicks across all activity types for a student. |click |
+| **Access Date** | date minus date submitted for both datasets. Date is the final date to complete assessment and date submitted is when it was taken. |click and assessment |
+| **Module length to number of credits ratio** | length of module presentation in days divided by the number of credits for the module. |click and assessment |
+| **Total clicks per activity type per student**  | e.g. page, questionnaire, quiz. |click |
 
 
 ## EDA (EXPLORATORY DATA ANALYSIS)
