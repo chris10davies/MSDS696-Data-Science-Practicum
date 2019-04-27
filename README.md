@@ -155,7 +155,19 @@ The following variables were feature engineered:
 ### Employee Status
  A bar plot was utilized to see the number of reviews from current vs. former employees. Both companies had more reviews submitted from former employees.
 
-![alt text](images/bar_emp_status.png "emp_status")
+ **Google**
+ <table>
+   <tbody>
+     <tr>
+       <th align="left">Assessment Type</th>
+       <th align="center">Age Band</th>
+       <th align="center">Final Result</th>
+     </tr>
+     <tr>
+       <td><img src="images/assess_type_bar.png"></td>
+       <td><img src="images/age_bar.png"></td>
+       <td><img src="images/final_res_bar.png"></td>
+     </tr>
 
 ### Ratings
 Visualizing the company review ratings shows the majority of Google's reviews are rated 5 or 4 with very few 2's and 1's. Tesla also had many 5's and 4's along with a decent amount of lower ratings. This lines up with Google's mean rating of 4.2 compared to Tesla's mean rating of 3.6.
