@@ -206,6 +206,7 @@ Some of the more interesting boxplots compared score to assessment type, age ban
 ### Distribution of Data
 
 **Average Clicks/Score Scatter**
+
 ![alt text](images/avg_clicks_scatter.png "scatter avg clicks score")
 
 ##  ANALYSIS
