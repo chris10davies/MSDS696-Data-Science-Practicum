@@ -169,15 +169,28 @@ The following variables were feature engineered:
      </tr>
   </table>
 
-Tutor marked assessments (TMA) are the highest proportion of assessments types and final exams the lowest. Almost 70% of the students are less than 35 years old and over 20% of the students had a final result of 'Failed' with the remainder passing or passing with distinction.  
+Tutor marked assessments (TMA) are the highest proportion of assessments types and final exams the lowest. Almost 70% of the students are less than 35 years old and over 20% of the students had a final result of 'Failed' with the remainder passing or passing with distinction.
+
+### Boxplots
+ <table>
+   <tbody>
+     <tr>
+       <th align="left">Assessment Type</th>
+       <th align="center">Age Band</th>
+       <th align="center">Course Module</th>
+     </tr>
+     <tr>
+       <td><img src="images/assess_type_box.png"></td>
+       <td><img src="images/age_box.png"></td>
+       <td><img src="images/course_box.png"></td>
+     </tr>
+  </table>
+
+analysis of boxlots.  
 
 ##  ANALYSIS
 
 ### Sentiment Analysis
-
-TextBlob was used to perform sentiment analysis on the review text, somewhat unsuccessfully.  As a crosscheck, the rating was compared to the assigned sentiment, and not everything lined up. For example, TextBlob gave 17 reviews for Tesla a positive sentiment but the reviewers gave a rating of 1.  
-
-Many other ratings for both companies has similar issues. Adjustments to the sentiment assignment code were attempted to improve the results. Unfortunately, each attempt resulted in further discrepancies between rating and sentiment.
 
 ``` python
 
