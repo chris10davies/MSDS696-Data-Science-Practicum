@@ -186,7 +186,7 @@ Tutor marked assessments (TMA) are the highest proportion of assessments types a
      </tr>
   </table>
 
-analysis of boxlots.  
+Some of the more interesting boxplots compared score to assessment type, age band, and course module.  Computer marked assessments had the highest median and exams the lowest.  When comparing score to age band, the age band with the highest score median was 55 and over.  Looking into the course setup, methods of delivery, and assessment details of course modules with the highest score median may help build more successful courses. Course modules EEE, FFF, and BBB had the highest score medians.  Using median for this part of the analysis seems to be a good measure as the median is less impacted by outliers.    
 
 ##  ANALYSIS
 
