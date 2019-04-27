@@ -101,7 +101,7 @@ The first challenge was to bring all of this data together into a cohesive datas
 
 ![alt text](images/join_1.png "join")
 
-In an effort to gain a better understanding of machine learning, I decided to compare the results of two versions of the dataset in the regression models.  The first dataset is grouped by the student, includes the material click data, and the average assessment score for each student is the target.  The second dataset does not include the click data and has a row each assessment score for each student as the target.  Some features the second dataset are not categorical and may provide enough variance for predictions.  
+In an effort to gain a better understanding of machine learning, I decided to compare the results of two versions of the dataset in the regression models.  The first dataset is grouped by the student, includes the material click data, and the average assessment score for each student is the target.  The second dataset does not include the click data and has a row for each assessment score for each student as the target.  Some features in the second dataset are not categorical and may provide enough variance to make decent predictions.  
 
 **Click Dataset**
 <table align="center">
@@ -153,7 +153,7 @@ The following variables were feature engineered:
 ## EDA (EXPLORATORY DATA ANALYSIS)
 
 ### Correlation Matrix
- I created a correlation matrix for both datasets and did not see very strong correlations between any predictor variables.
+ I created a correlation matrix for both datasets and did not see very strong correlations between any predictor variables.  I therefore did not remove any predictor variables.  
 
  <table>
    <tbody>
@@ -201,7 +201,12 @@ Tutor marked assessments (TMA) are the highest proportion of assessments types a
      </tr>
   </table>
 
-Some of the more interesting boxplots compared score to assessment type, age band, and course module.  Computer marked assessments had the highest median and exams the lowest.  When comparing score to age band, the age band with the highest score median was 55 and over.  Looking into the course setup, methods of delivery, and assessment details of course modules with the highest score median may help build more successful courses. Course modules EEE, FFF, and BBB had the highest score medians.  Using median for this part of the analysis seems to be a good measure as the median is less impacted by outliers.    
+Some of the more interesting boxplots compared score to assessment type, age band, and course module.  Computer marked assessments had the highest median and exams the lowest.  When comparing score to age band, the age band with the highest score median was 55 and over.  Looking into the course setup, methods of delivery, and assessment details of course modules with the highest score median may help build more successful courses. Course modules EEE, FFF, and BBB had the highest score medians.  Using median for this part of the analysis seems to be a good measure as the median is less impacted by outliers.   
+
+### Distribution of Data
+
+**Average Clicks/Score Scatter**
+![alt text](images/avg_clicks_scatter.png "scatter avg clicks score")
 
 ##  ANALYSIS
 
