@@ -101,7 +101,7 @@ The first challenge was to bring all of this data together into a cohesive datas
 
 ![alt text](images/join_1.png "join")
 
-In an effort to gain a better understanding of machine learning, I decided to compare the results of two versions of the dataset in the regression models.  The first dataset is grouped by the student, includes the material click data, and the average assessment score for each student is the target.  The second dataset does not include the click data and has a row each assessment score for each student as the target.  Some features the second dataset are not categorical and may provide enough variance for predictions.  To sum it up:
+In an effort to gain a better understanding of machine learning, I decided to compare the results of two versions of the dataset in the regression models.  The first dataset is grouped by the student, includes the material click data, and the average assessment score for each student is the target.  The second dataset does not include the click data and has a row each assessment score for each student as the target.  Some features the second dataset are not categorical and may provide enough variance for predictions.  
 
 **Click Dataset**
 <table align="center">
@@ -111,11 +111,11 @@ In an effort to gain a better understanding of machine learning, I decided to co
     </tr>
     <tr>
         <td align="center"><b>Structure</b></td>
-        <td align="center">more features, less rows</td>
+        <td align="left">more features, less rows</td>
     </tr>
     <tr>
         <td align="center"><b>Rows/Features</b></td>
-        <td align="center">37,030 rows, 38 features</td>
+        <td align="left">37,030 rows, 38 features</td>
     </tr>
 </table>
 
@@ -128,11 +128,11 @@ In an effort to gain a better understanding of machine learning, I decided to co
     </tr>
     <tr>
         <td align="center"><b>Structure</b></td>
-        <td align="center">less features, more rows</td>
+        <td align="left">less features, more rows</td>
     </tr>
     <tr>
         <td align="center"><b>Rows/Features</b></td>
-        <td align="center">153,537 rows, 19 features</td>
+        <td align="left">153,537 rows, 19 features</td>
     </tr>
 </table>
 
