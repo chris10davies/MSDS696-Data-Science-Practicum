@@ -145,7 +145,7 @@ The following variables were feature engineered:
 | **Average Click** | Average clicks across all activity types for a student. |click |
 | **Access Date** | date minus date submitted for both datasets. Date is the final date to complete assessment and date submitted is when it was taken. |click and assessment |
 | **Module length to number of credits ratio** | length of module presentation in days divided by the number of credits for the module. |click and assessment |
-| **Total clicks per activity type per student**  | e.g. page, questionnaire, quiz. |click |
+| **Total clicks by activity type by student**  | Total clicks on course materials for each student (e.g.page, questionnaire, quiz). |click |
 
 
 ## EDA (EXPLORATORY DATA ANALYSIS)
