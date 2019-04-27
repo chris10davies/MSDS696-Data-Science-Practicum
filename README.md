@@ -290,6 +290,7 @@ Write something here about linear regression and regularization. score.
 For each model, I ran predict on the train and test datasets to make sure the model was not over or underfitting.
 
 **Predict vs. Actual for Train & Test Datasets**
+
 ![alt text](images/click_results_scat.png "click_results_scat")
 
 **Assessment Dataset - Top 3 Models**
