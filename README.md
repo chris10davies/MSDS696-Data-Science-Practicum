@@ -317,7 +317,7 @@ XGBoost has the best adjusted r2 and the lowest RSME on the click dataset, altho
     </tr>
 </table>
 
-Random Forest has the best adjusted r2 and the lowest RSME on the assessment dataset, but the overall results were far lower than the click dataset scores.  More features and with less rows did much better with the regression models.  This makes sense, as more features make the model more complex with greater variance, ultimately allowing for better predictions.   
+Random Forest has the best adjusted r2 and the lowest RSME on the assessment dataset, but the overall results were far lower than the click dataset scores.  More features and with less rows did much better with the regression models.  This makes sense, as more features give the model higher complexity and greater variance, ultimately allowing for better predictions.   
 
 **Predict vs. Actual for Train & Test Datasets - Random Forest (best model)**
 
