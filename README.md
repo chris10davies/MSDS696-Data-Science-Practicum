@@ -287,7 +287,7 @@ I started modeling with a linear regression model.  As suspected, the results we
     </tr>
 </table>
 
-XGBoost has the best adjusted r2 and the lowest RSME on the click dataset, although I was hoping for better results.  For each model, I ran predict on the train and test datasets.  I did this to compare the results of the fitted model on train and test, specifically keeping an eye out for overfitting.
+XGBoost has the best adjusted r2 and the lowest RSME on the click dataset, although I was hoping for better overall results.  For each model, I ran predict on the train and test datasets.  I did this to compare the results of the fitted model on train and test, specifically to watch for overfitting.
 
 **Predict vs. Actual for Train & Test Datasets - XGBoost (best model)**
 
@@ -306,7 +306,7 @@ XGBoost has the best adjusted r2 and the lowest RSME on the click dataset, altho
         <td align="left">14.4142</td>
     </tr>
     <tr>
-        <td align="left">Neural Netr</td>
+        <td align="left">Neural Net</td>
         <td align="left">0.3308</td>
         <td align="left">14.9135</td>
     </tr>
