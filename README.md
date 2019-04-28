@@ -380,9 +380,9 @@ Due to adding classification at the end of the project, I was only able to try t
 
 ## CONCLUSIONS
 
-* Sub par regression model results, more features may improve results
+* Sub par regression model results, more features could improve scores
 
-* Regression models had much better results on click dataset (more features, less rows) that the assessment dataset (less features, more rows)
+* Regression models had much better results on click dataset (more features, less rows) than the assessment dataset (less features, more rows)
 
 * GridSearchCV worked great to identify optimal parameters - Further hypertuning may improve results while being cautious about overfitting
 
