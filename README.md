@@ -97,11 +97,11 @@ https://www.kaggle.com/rocki37/open-university-learning-analytics-dataset/activi
 | sum_click | Number of interactions by student with material in that day. |
 
 ## JOINS
-The first challenge was to bring all of this data together into a cohesive dataset that could be used for machine learning.  I knew I had 173,912 assessments with scores to train my models.  It quickly became apparent their were multiple assessments for each student.  After my joins, a student could have multiple assessment rows with many common features and a different target score.  This could make training a model problematic.   
+The first challenge was to bring all of this data together into a cohesive machine learnable dataset, with meaningful features and assessment score as the target.  I knew I had 173,912 assessments with scores to train my models.  It quickly became apparent that students could have multiple assessment scores.  This translated to a dataset with  multiple rows for the same student with many common features and a different target score.  This could make training a model problematic.   
 
 ![alt text](images/join_1.png "join")
 
-In an effort to gain a better understanding of machine learning, I decided to compare the results of two versions of the dataset in the regression models.  The first dataset is grouped by the student, includes the material click data, and the average assessment score for each student is the target.  The second dataset does not include the click data and has a row for each assessment score for each student as the target.  Some features in the second dataset are not categorical and may provide enough variance to make decent predictions.  
+In an effort to gain a better understanding of machine learning, I decided to compare the results of two versions of the dataset in the regression models.  The first dataset is grouped by the student, includes the material click data greatly adding to the feature count, and the average assessment score for each student is the target.  The second dataset does not include the click data and has a row for each assessment score for each student as the target.  Some features in the second dataset are not categorical and may provide enough variance to make decent predictions.  
 
 **Click Dataset**
 <table align="center">
