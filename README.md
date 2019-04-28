@@ -408,3 +408,5 @@ Editor, M. B. (2013, June 13). Multiple Regression Analysis: Use Adjusted R-Squa
 Narkhede, S. (2018, June 26). Understanding AUC - ROC Curve. Retrieved from https://towardsdatascience.com/understanding-auc-roc-curve-68b2303cc9c5
 
 RMSE: Root Mean Square Error. (2017, November 14). Retrieved from https://www.statisticshowto.datasciencecentral.com/rmse/
+
+Russell, R. (2018, October 27). Open University Learning Analytics Dataset. Retrieved from https://www.kaggle.com/rocki37/open-university-learning-analytics-dataset
