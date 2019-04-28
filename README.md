@@ -344,7 +344,7 @@ To finish up regression modeling, I wanted to see if I could improve the random 
     </tr>
 </table>
 
-The model did slightly better than it's last run, but XGBoost still did a a little better.
+The model did slightly better than it's last run, but XGBoost still performed better.
 
 ###  Supervised Learning - Classification
 
