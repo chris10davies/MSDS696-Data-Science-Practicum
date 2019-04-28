@@ -319,7 +319,7 @@ XGBoost has the best adjusted r2 and the lowest RSME on the click dataset, altho
 
 Random Forest has the best adjusted r2 and the lowest RSME on the assessment dataset, but the overall results were far lower than the click dataset scores.  More features and with less rows did much better with the regression models.  This makes sense, as more features make the model more complex with greater variance, ultimately allowing for better predictions.   
 
-**Predict vs. Actual for Train & Test Datasets - XGBoost (best model)**
+**Predict vs. Actual for Train & Test Datasets - Random Forest (best model)**
 
 ![alt text](images/assess_results_scat.png "assess_results_scat")
 
@@ -381,7 +381,7 @@ Due to the adding classification in a the end of the project, I was only able to
 
 ## CONCLUSIONS
 
-* Regression Models didn’t get the best results, more features may improve results
+* Sub par regression model results, more features may improve results
 
 * GridSearchCV worked great to identify optimal parameters - Further hypertuning may improve results while being cautious about overfitting
 
@@ -389,16 +389,11 @@ Due to the adding classification in a the end of the project, I was only able to
 
 * Ensemble models are powerful and produce impressive results
 
-* It makes sense that classification performed better than regression, as classification had a 50% chance of getting it right
+* It makes sense that classification performed better than regression, as binary classification had a 50% chance of making correct prediction
 
+* Many of the feature engineered variables ended up being important features to the model, amazing how combinations of various features can improve a model
 
 ## REFERENCES
 
 **Youtube Presentation**
 https://youtu.be/0BFaGmPbY_k
-
-George, P. (2018, December 13). Working at Tesla Means Being in an 'Abusive Relationship' With Elon Musk: Report. Retrieved from https://jalopnik.com/working-at-tesla-means-being-in-an-abusive-relationship-1831072258
-
-Schneider, M. (2017, July 26). Google Gets 2 Million Applications a Year. To Have a Shot, Your Resume Must Pass the '6-Second Test'. Retrieved from https://www.inc.com/michael-schneider/its-harder-to-get-into-google-than-harvard.html
-
-Thibodeaux, W. (2018, September 19). 67 Percent of Recruiters Say It's Harder Than Ever to Find Talent. Here's How to Beat the Odds. Retrieved from https://www.inc.com/wanda-thibodeaux/67-percent-of-recruiters-say-its-harder-than-ever-to-find-talent-heres-how-to-beat-odds.html
