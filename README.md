@@ -287,7 +287,7 @@ I started modeling with a linear regression model.  As suspected, the results we
     </tr>
 </table>
 
-XGBoost has the best adjusted r2 and the lowest RSME on the click dataset, although I was hoping for better results.  For each model, I ran predict on the train and test datasets.  I did this to compare the results of the fitted model on train and test, specifically looking for underfitting and overfitting.
+XGBoost has the best adjusted r2 and the lowest RSME on the click dataset, although I was hoping for better results.  For each model, I ran predict on the train and test datasets.  I did this to compare the results of the fitted model on train and test, specifically keeping an eye out for overfitting.
 
 **Predict vs. Actual for Train & Test Datasets - XGBoost (best model)**
 
@@ -348,44 +348,37 @@ The model did slightly better than it's last run, but XGBoost still did a a litt
 
 ###  Supervised Learning - Classification
 
+Using the better performing click dataset, I ran classification models with a new target, final result (pass/fail).  
+
 **Model Result Measures**
 
-I chose to measure the regression model results with the following 2 metrics:
+I chose to measure the classification model results with the following 2 metrics:
 
-**Adjusted r2** - r2 is the percentage of the variation in response variables that is explained by the model. (ref r2)  Adjusted r2 adjusts for multiple predictors and only increases the score if a predictor improves a model more than what chance would predict(ref adjusted r2).  The higher the adjusted r2, the better.
+**Kappa** - A conservative estimate of accuracy as it tells you how much better or worse the model is compared to random change (Kappa).
 
-**Root Mean Square Error (RMSE)** - RMSE is the "standard deviation of the residuals" (ref RMSE).  The closer to zero (exact prediction), the better.  
+**Area Under the Curve (AUC)** - Tells how well a model separates classes (AUC).  
 
 <table align="center">
     <tr>
         <td align="center"><b>Model</b></td>
         <td align="center"><b>Kappa r2</b></td>
         <td align="center"><b>AUC</b></td>
-        <td align="center"><b>Precision</b></td>
-        <td align="center"><b>Recall</b></td>
     </tr>
     <tr>
         <td align="left">Logistic Regression</td>
         <td align="left">0.4750</td>
         <td align="left">0.85567</td>
-        <td align="left">0.85</td>
-        <td align="left">0.94</td>
     </tr>
     <tr>
         <td align="left">Random Forest Classifier</td>
         <td align="left">0.6020</td>
         <td align="left">0.91729</td>
-        <td align="left">0.87</td>
-        <td align="left">0.97</td>
     </tr>
 </table>
 
 ## CONCLUSIONS
 
 * Regression Models didn’t get the best results, more features may improve results
-
-
-* Simple Word Counts Impressive
 
 * GridSearchCV worked great to identify optimal parameters - Further hypertuning may improve results while being cautious about overfitting
 
