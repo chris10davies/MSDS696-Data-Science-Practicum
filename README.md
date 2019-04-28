@@ -255,7 +255,7 @@ timer(start_time)
 
 I chose to measure the regression model results with the following 2 metrics:
 
-**Adjusted r2** - r2 is the percentage of the variation in response variables that is explained by the model. (ref r2)  Adjusted r2 adjusts for multiple predictors and only increases the score if a predictor improves a model more than what chance would predict(ref adjusted r2).  The higher the adjusted r2, the better.
+**Adjusted r2** - r2 is the percentage of the variation in response variables that is explained by the model. (Editor, May,2013)  Adjusted r2 adjusts for multiple predictors and only increases the score if a predictor improves a model more than what chance would predict(Editor, June,2013).  The higher the adjusted r2, the better.
 
 **Root Mean Square Error (RMSE)** - RMSE is the "standard deviation of the residuals" (ref RMSE).  The closer to zero (exact prediction), the better.  
 
@@ -354,7 +354,7 @@ Using the better performing click dataset, I ran classification models with a ne
 
 I chose to measure the classification model results with the following 2 metrics:
 
-**Kappa** - A conservative estimate of accuracy as it tells you how much better or worse the model is compared to random change (Kappa).
+**Kappa** - A conservative estimate of accuracy as it tells you how much better or worse the model is compared to random change (Aaron, 2014).
 
 **Area Under the Curve (AUC)** - Tells how well a model separates classes (AUC).  
 
@@ -383,6 +383,8 @@ Due to the adding classification in a the end of the project, I was only able to
 
 * Sub par regression model results, more features may improve results
 
+* Regression models had much better results on click dataset (more features, less rows) that the assessment dataset (less features, more rows)
+
 * GridSearchCV worked great to identify optimal parameters - Further hypertuning may improve results while being cautious about overfitting
 
 * Predicting assessment scores would have been easier if there was one score per student, made things complex
@@ -396,4 +398,9 @@ Due to the adding classification in a the end of the project, I was only able to
 ## REFERENCES
 
 **Youtube Presentation**
-https://youtu.be/0BFaGmPbY_k
+
+Aaron. (2014, August 12). How are kappa and overall accuracy related with respect to thematic raster data? Retrieved from https://gis.stackexchange.com/questions/110188/how-are-kappa-and-overall-accuracy-related-with-respect-to-thematic-raster-data
+
+Editor, M. B. (2013, May 30). Regression Analysis: How Do I Interpret R-squared and Assess the Goodness-of-Fit? Retrieved from https://blog.minitab.com/blog/adventures-in-statistics-2/regression-analysis-how-do-i-interpret-r-squared-and-assess-the-goodness-of-fit
+
+Editor, M. B. (2013, June 13). Multiple Regression Analysis: Use Adjusted R-Squared and Predicted R-Squared to Include the Correct Number of Variables. Retrieved from https://blog.minitab.com/blog/adventures-in-statistics-2/multiple-regession-analysis-use-adjusted-r-squared-and-predicted-r-squared-to-include-the-correct-number-of-variables
