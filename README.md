@@ -257,7 +257,7 @@ I chose to measure the regression model results with the following 2 metrics:
 
 **Adjusted r2** - r2 is the percentage of the variation in response variables that is explained by the model. (Editor, May,2013)  Adjusted r2 adjusts for multiple predictors and only increases the score if a predictor improves a model more than what chance would predict(Editor, June,2013).  The higher the adjusted r2, the better.
 
-**Root Mean Square Error (RMSE)** - RMSE is the "standard deviation of the residuals" (ref RMSE).  The closer to zero (exact prediction), the better.  
+**Root Mean Square Error (RMSE)** - RMSE is the "standard deviation of the residuals" (RMSE, 2017).  The closer to zero (exact prediction), the better.  
 
 **Model Results**
 
@@ -356,7 +356,7 @@ I chose to measure the classification model results with the following 2 metrics
 
 **Kappa** - A conservative estimate of accuracy as it tells you how much better or worse the model is compared to random change (Aaron, 2014).
 
-**Area Under the Curve (AUC)** - Tells how well a model separates classes (AUC).  
+**Area Under the Curve (AUC)** - Tells how well a model separates classes (Narkhede, 2018).  
 
 <table align="center">
     <tr>
@@ -404,3 +404,7 @@ Aaron. (2014, August 12). How are kappa and overall accuracy related with respec
 Editor, M. B. (2013, May 30). Regression Analysis: How Do I Interpret R-squared and Assess the Goodness-of-Fit? Retrieved from https://blog.minitab.com/blog/adventures-in-statistics-2/regression-analysis-how-do-i-interpret-r-squared-and-assess-the-goodness-of-fit
 
 Editor, M. B. (2013, June 13). Multiple Regression Analysis: Use Adjusted R-Squared and Predicted R-Squared to Include the Correct Number of Variables. Retrieved from https://blog.minitab.com/blog/adventures-in-statistics-2/multiple-regession-analysis-use-adjusted-r-squared-and-predicted-r-squared-to-include-the-correct-number-of-variables
+
+Narkhede, S. (2018, June 26). Understanding AUC - ROC Curve. Retrieved from https://towardsdatascience.com/understanding-auc-roc-curve-68b2303cc9c5
+
+RMSE: Root Mean Square Error. (2017, November 14). Retrieved from https://www.statisticshowto.datasciencecentral.com/rmse/
