@@ -376,8 +376,7 @@ I chose to measure the classification model results with the following 2 metrics
     </tr>
 </table>
 
-Due to adding classification at the end of the project, I was only able to try two models.  Both performed well, but the Random Forest Classifier was the definite winner.  The kappa was .60 and the AUC was an impressive .92.  The classification models doing better than the regression models is not a surprise as there are only 2 final status outcomes.  You can get a lot right with random guessing and this makes the kappa score very important.  
-
+Due to adding classification at the end of the project, I was only able to try two models.  Both performed well, but the Random Forest Classifier was the definite winner.  The kappa was .60 and the AUC was an impressive .92.  The classification models doing better than the regression models is not a surprise as there are only 2 final status outcomes.  With classification models, especially binary classification models, a model can be successful with random guessing. For this reason, I can see why the kappa score is so important.  
 
 ## CONCLUSIONS
 
