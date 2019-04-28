@@ -348,7 +348,7 @@ The model did slightly better than it's last run, but XGBoost still did a a litt
 
 ###  Supervised Learning - Classification
 
-Using the better performing click dataset, I ran classification models with a new target, final result (pass/fail).  
+Using the better performing click dataset, I ran classification models with a new target, final result (pass/fail).  This was not part of the original scope of the project, but not getting great results with the regression models prompted me to delve into classification modeling.  
 
 **Model Result Measures**
 
@@ -361,7 +361,7 @@ I chose to measure the classification model results with the following 2 metrics
 <table align="center">
     <tr>
         <td align="center"><b>Model</b></td>
-        <td align="center"><b>Kappa r2</b></td>
+        <td align="center"><b>Kappa</b></td>
         <td align="center"><b>AUC</b></td>
     </tr>
     <tr>
@@ -375,6 +375,9 @@ I chose to measure the classification model results with the following 2 metrics
         <td align="left">0.91729</td>
     </tr>
 </table>
+
+Due to the adding classification in a the end of the project, I was only able to try two models.  Both performed well, but the Random Forest Classifier was the definite winner.  The kappa was .60 and the AUC was an impressive .92.  The classification models doing better than the regression models is not a surprise as there are only 2 final status outcomes.  You can get a lot right with random guessing and this makes the kappa score very important.  
+
 
 ## CONCLUSIONS
 
