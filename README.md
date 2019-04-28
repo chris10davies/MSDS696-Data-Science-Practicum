@@ -101,7 +101,7 @@ The first challenge was to bring all of this data together into a cohesive machi
 
 ![alt text](images/join_1.png "join")
 
-In an effort to gain a better understanding of machine learning, I decided to compare the results of two versions of the dataset in the regression models.  The first dataset is grouped by the student, includes the material click data greatly adding to the feature count, and the average assessment score for each student is the target.  The second dataset does not include the click data and has a row for each assessment score for each student as the target.  Some features in the second dataset are not categorical and may provide enough variance to make decent predictions.  
+In an effort to gain a better understanding of machine learning, I decided to compare the results of two versions of the dataset in the regression models.  The first dataset is grouped by the student, includes the material click data which great adds to the feature count, and the average assessment score for each student is the target.  The second dataset does not include the click data and has a row for each assessment score for each student as the target.  Some features in the second dataset are not categorical and may provide enough variance to make decent predictions.  
 
 **Click Dataset**
 <table align="center">
