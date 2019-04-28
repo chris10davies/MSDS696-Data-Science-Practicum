@@ -211,7 +211,7 @@ I experimented with many scatterplots and other visualizations to get the basic 
 
 ![alt text](images/avg_clicks_scatter.png "scatter avg clicks score")
 
-It's very clear that the lower scores had lower average clicks.  To be fair there are plenty of higher scores with lower average clicks as well.  There does, however, seem to be a slight positive correlation.  Intuitively, this makes sense, as  more time spent working with course materials should result in a better course score.  
+It's very clear that the lower scores had lower average clicks.  To be fair, there are plenty of higher scores with lower average clicks as well.  There does, however, seem to be a slight positive correlation.  Intuitively, this makes sense, as  more time spent working with course materials should result in a better course score.  
 
 **Score Histograms**
 
@@ -233,7 +233,7 @@ It's very clear that the lower scores had lower average clicks.  To be fair ther
 
 ###  GridSearchCV
 
-I utilized GridSearchCV to perform 5 fold cross validation and identify the optimal parameters for all of my models.  It did take a long time to run each model, but it seems like it was worth it to get optimized parameters settings.
+I utilized GridSearchCV to perform 5 fold cross validation and identify the optimal parameters for all of my models.  It took a long time to run each model, but it was worth it to obtain optimized parameters settings.
 
 **Sample of GridSearchCV Code with parameter grid**  
 
