@@ -145,7 +145,7 @@ The following variables were feature engineered:
 | Variable       | Description    |Dataset|
 |:------------- |:-------------|:-------------|
 | Average Click | Average clicks across all activity types for a student. |Click |
-| Access Date | Date minus date submitted for both datasets. Date is the final date to complete assessment and date submitted is when it was taken. |Click and Assessment |
+| Access Date | Date minus date submitted for both datasets. Date is the final date to complete assessment and date submitted is when it was taken, both in number of days since module start.|Click and Assessment |
 | Module length to number of credits ratio| Length of module presentation in days divided by the number of credits for the module. |Click and Assessment |
 | Total clicks by activity type by student | Total clicks on course materials for each student (e.g.page, questionnaire, quiz). |Click |
 
