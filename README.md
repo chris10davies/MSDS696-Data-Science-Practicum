@@ -9,7 +9,10 @@ For this project, I spent most of my time training regression models to predict 
 ## DATA
 
 The data and variable descriptions came from from **Kaggle:**
-https://www.kaggle.com/rocki37/open-university-learning-analytics-dataset/activity & https://analyse.kmi.open.ac.uk/open_dataset
+
+https://www.kaggle.com/rocki37/open-university-learning-analytics-dataset/activity
+
+https://analyse.kmi.open.ac.uk/open_dataset
 
 ### Open University Datasets
 
@@ -261,7 +264,7 @@ I chose to measure the regression model results with the following 2 metrics:
 
 **Model Results**
 
-I started modeling with a linear regression model.  As suspected, the results were not great with an RSME of 12.92 and an adjusted r2 of 0.3823.  I also tried regularization with Ridge and Lasso but the results did not improve.  Below are the results of the top 3 models for each dataset.
+I started modeling with a linear regression model.  As suspected, the results were not great with an RSME of 12.82 and an adjusted r2 of 0.3798.  I also tried regularization with Ridge and Lasso but the results did not improve.  Below are the results of the top 3 models for each dataset.
 
 **Click Dataset - Top 3 Models**
 <table align="center">
