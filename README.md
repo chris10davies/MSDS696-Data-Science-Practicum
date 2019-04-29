@@ -88,7 +88,7 @@ https://analyse.kmi.open.ac.uk/open_dataset
 | score | Assessment score from 0 - 100.  40 is considered 'Fail'. |
 
 **Student VLE** - Students interactions with materials in the VLE,
-1,0655,280 rows, 6 variables
+10,655,280 rows, 6 variables
 
 | Variable       | Description          |
 |:------------- |:-------------|
