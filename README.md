@@ -230,7 +230,7 @@ It's very clear that the lower scores had lower average clicks.  To be fair, the
     </tr>
  </table>
 
- Both datasets are left skewed, although the assessment dataset seems to be more left skewed than the click dataset.  The assessment dataset has 2 large spikes around 80 and 100.  The click dataset seems to be the closest of the two to a normal distribution.  Looking at this it does seem like linear models may not perform well with this data.  In the analysis section we'll see this does prove true as non-linear models have the best results.  
+ Both datasets are left skewed, although the assessment dataset seems to be more left skewed than the click dataset.  The assessment dataset has 2 large spikes around 80 and 100.  The click dataset seems to be the closer of the two to a normal distribution.  Looking at this it does seem like linear models may not perform well with this data.  In the analysis section we'll see this does prove true as non-linear models have the best results.  
 
 ##  ANALYSIS
 
