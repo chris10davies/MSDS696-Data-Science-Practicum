@@ -399,7 +399,7 @@ Due to adding classification at the end of the project, I was only able to try t
 
 ## REFERENCES
 
-**Youtube Presentation** - https://youtu.be/6oiezZ2JZT0
+**Youtube Presentation** - https://youtu.be/-JQ11GhcmtQ
 
 Aaron. (2014, August 12). How are kappa and overall accuracy related with respect to thematic raster data? Retrieved from https://gis.stackexchange.com/questions/110188/how-are-kappa-and-overall-accuracy-related-with-respect-to-thematic-raster-data
 
